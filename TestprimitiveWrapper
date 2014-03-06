@@ -1,0 +1,30 @@
+package chaitu.test;
+
+public class Testprimitive{
+
+
+ public static void main(String args[]){
+        LoopingTest test=new LoopingTest();
+        test.testPrimitive();
+
+    }
+
+
+ public void testPrimitive(){
+        Integer ip=10;
+        int i=0;
+        if(ip==10){
+            System.out.println("inside if condition of primitive test");
+        }
+        Boolean b=true;
+        if(b){
+            System.out.println("insdide if condition of boolean primitive check");
+        }
+        if(ip!=null & ip!=11){
+            System.out.println("inside if of & condition Integer");
+        }
+        if(i==0 | ip==10){
+            System.out.println("inside if of & condition of int ");
+        }
+    }//testPrimitive
+}//class
