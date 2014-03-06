@@ -24,7 +24,7 @@ public class TestSetExample {
         newset.add("HIJ");
         newset.add("ABC");
         
-        System.out.println("new set values "+newset);
+        System.out.println("new set test values "+newset);
         
     }
 }
