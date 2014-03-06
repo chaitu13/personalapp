@@ -1,0 +1,30 @@
+  package chaitu.test;
+  public class testoverload {
+ 
+  public static void main(String[] args) {
+ 
+    testoverload obj = new testoverload();
+    obj.overLoad(null);  // will run and prints double array argument method
+    obj.overLoadtest(null); // will give compile error 
+      
+      
+  }
+ 
+  private void overLoad(Object o) {
+    System.out.println("Object o argument method.");
+  }
+ 
+  private void overLoad(double[] dArray) {
+    System.out.println("double array argument method.");
+  }
+  
+  
+    private void overLoadtest(String s) {
+    System.out.println("Object o argument method.");
+  }
+ 
+  private void overLoadtest(NullPointerException npe) {
+    System.out.println("double array argument method.");
+  }
+ 
+}
