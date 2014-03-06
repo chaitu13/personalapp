@@ -1,0 +1,30 @@
+package chaitu.test;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.Vector;
+
+public class TestSetExample {
+    
+    public static void main(String args[]){
+        TestSetExample setExample=new TestSetExample();
+        setExample.testvector();
+    }
+    public void testvector(){
+        Vector v=new Vector();
+        v.add(10);
+        v.add(15);
+        v.add(20);
+        System.out.println((String)v.elementAt(0)+(String)v.elementAt(1));
+        
+    }
+    public void testSetfunction(){
+        Set  newset = new TreeSet ();
+        newset.add("ABC");
+        newset.add("EFG");
+        newset.add("HIJ");
+        newset.add("ABC");
+        
+        System.out.println("new set values "+newset);
+        
+    }
+}
